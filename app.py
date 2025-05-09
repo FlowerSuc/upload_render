@@ -4,8 +4,8 @@ import os
 from PIL import Image
 import torch
 from options import TrainOptions
-from networks import RPTC
-from data import process
+import RPTC
+import process
 import time
 
 model_path = "RPTC.pth"
