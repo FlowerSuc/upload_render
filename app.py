@@ -3,9 +3,9 @@ from werkzeug.utils import secure_filename
 import os
 from PIL import Image
 import torch
-from patchCraft_new.options import TrainOptions
-from patchCraft_new.networks import RPTC
-from patchCraft_new.data import process
+from options import TrainOptions
+from networks import RPTC
+from data import process
 import time
 
 model_path = "RPTC.pth"
