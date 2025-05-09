@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ai-detector-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    runtime: python
+    region: oregon  # 可选区域（也可选 frankfurt 等）
+    plan: free
+    branch: main  # 你的 GitHub 仓库的默认分支
+    repo: your-username/your-repo-name  # 替换为你的 GitHub 仓库地址
+    autoDeploy: true
